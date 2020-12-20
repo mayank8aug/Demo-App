@@ -1,0 +1,95 @@
+$color-map: (
+  primary: #1976d2,
+  secondary: #f5f5f5,
+  white: #ffffff,
+  black: #333
+);
+
+@each $name, $color in $color-map {
+  .bg-#{$name} {
+    background: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+@for $i from 1 through 10 {
+  .pd-#{$i * 4} {
+    padding: $i * 4px;
+  }
+  .pd-l#{$i * 4} {
+    padding-left: $i * 4px;
+  }
+  .pd-r#{$i * 4} {
+    padding-right: $i * 4px;
+  }
+  .mr-l#{$i * 4} {
+    margin-left: $i * 4px;
+  }
+  .mr-r#{$i * 4} {
+    margin-right: $i * 4px;
+  }
+}
+
+@for $i from 6 through 16 {
+  .fs-#{$i * 2} {
+    font-size: $i * 2px;
+  }
+}
+
+@for $i from 4 through 9 {
+  .fw-#{$i * 100} {
+    font-weight: $i * 100;
+  }
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+@for $i from 1 through 25 {
+  .flex-basis-#{$i * 4} {
+    flex-basis: $i * 4%;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.mr-b-5 {
+  margin-bottom: -5px;
+}
+
+.mr-b-7 {
+  margin-bottom: -7px;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}

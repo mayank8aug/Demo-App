@@ -1,0 +1,13 @@
+.grid {
+    border: 2px solid #f5f5f5;
+    border-spacing: 0px;
+    th {
+        text-transform: capitalize;
+    }
+    th, td {
+        padding: 12px;
+    }
+    tbody tr:nth-child(odd){
+        background-color: #f5f5f5;
+    }
+}

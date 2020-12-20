@@ -1,0 +1,19 @@
+{
+    "menuList": [
+        {
+            "url": "/",
+            "label": "SERVICES",
+            "icon": "cloud"
+        },
+        {
+            "url": "/containers",
+            "label": "CONTAINERS",
+            "icon": "box"
+        },
+        {
+            "url": "/tenants",
+            "label": "TENANTS",
+            "icon": "users"
+        }
+    ]
+}

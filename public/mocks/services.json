@@ -1,0 +1,46 @@
+{
+    "services": [
+        {
+            "name": "BMaaS",
+            "category": "compute",
+            "project_manager": "Kumar",
+            "regions": ["jp"],
+            "summary": "This server will be running as a bare metal server"
+        },
+        {
+            "name": "PaaS",
+            "category": "compute",
+            "project_manager": "Mayank",
+            "regions": ["us"],
+            "summary": "This server will be running as a Platform service"
+        },
+        {
+            "name": "DBaaS",
+            "category": "database",
+            "project_manager": "Rahul",
+            "regions": ["jp"],
+            "summary": "This server will be running as a databse server"
+        },
+        {
+            "name": "SaaS",
+            "category": "software",
+            "project_manager": "Allan",
+            "regions": ["uk"],
+            "summary": "This server will be running as a SaaS server"
+        },
+        {
+            "name": "BMaaS",
+            "category": "compute",
+            "project_manager": "Kumar",
+            "regions": ["in"],
+            "summary": "This server will be running as a bare metal server"
+        },
+        {
+            "name": "BMaaS",
+            "category": "compute",
+            "project_manager": "Kumar",
+            "regions": ["us"],
+            "summary": "This server will be running as a bare metal server"
+        }
+    ]
+}
