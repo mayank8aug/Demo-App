@@ -13,11 +13,11 @@ function Header() {
     return (
         <header>
             <div className="header bg-primary pd-8 align-items-center display-flex justify-space-between">
-                <div className="display-flex justify-space-around align-items-center flex-basis-12 fs-24 fw-700 text-white">
+                <div className="display-flex justify-space-around align-items-center brand fs-24 fw-700 text-white">
                     <NavMenuIcon />
                     <span className="cursor-pointer" onClick={redirectToRoot}>Cloud Platform</span>
                 </div>
-                <div className="display-flex justify-space-between flex-basis-20">
+                <div className="display-flex justify-space-between flex-basis-22">
                     <LanguageSwitcher />
                     <UserMenuIcon />
                 </div>

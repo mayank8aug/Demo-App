@@ -64,9 +64,9 @@ $color-map: (
   justify-content: space-around;
 }
 
-@for $i from 1 through 25 {
-  .flex-basis-#{$i * 4} {
-    flex-basis: $i * 4%;
+@for $i from 1 through 50 {
+  .flex-basis-#{$i * 2} {
+    flex-basis: $i * 2%;
   }
 }
 

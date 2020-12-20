@@ -11,7 +11,7 @@ function ViewController() {
             <div>
 
             </div>
-            <div className="display-flex justify-space-between align-items-center flex-basis-16">
+            <div className="display-flex justify-space-between align-items-center flex-basis-18">
                 <ViewSwitcher />
                 { sortConfig && <Sorting sortConfig={sortConfig} />}
             </div>
