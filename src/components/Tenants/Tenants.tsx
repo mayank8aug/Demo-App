@@ -1,8 +1,11 @@
 import React from 'react';
+import NewTenant from './NewTenant';
 
 function Tenants() {
     return (
-        <div>Tenants will render here</div>
+        <div className="pd-40">
+            <NewTenant />
+        </div>
     );
 }
 
