@@ -18,17 +18,23 @@ $color-map: (
   .pd-#{$i * 4} {
     padding: $i * 4px;
   }
-  .pd-l#{$i * 4} {
-    padding-left: $i * 4px;
-  }
   .pd-r#{$i * 4} {
     padding-right: $i * 4px;
   }
-  .mr-l#{$i * 4} {
-    margin-left: $i * 4px;
+  .pd-l#{$i * 4} {
+    padding-left: $i * 4px;
+  }
+  .mr-t#{$i * 4} {
+    margin-top: $i * 4px;
   }
   .mr-r#{$i * 4} {
     margin-right: $i * 4px;
+  }
+  .mr-b#{$i * 4} {
+    margin-bottom: $i * 4px;
+  }
+  .mr-l#{$i * 4} {
+    margin-left: $i * 4px;
   }
 }
 
@@ -62,6 +68,10 @@ $color-map: (
 
 .justify-space-around {
   justify-content: space-around;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
 }
 
 @for $i from 1 through 50 {

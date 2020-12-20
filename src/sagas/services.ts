@@ -4,7 +4,7 @@ import { types } from '../actions/services';
 
 export function* getServices() {
     try {
-        const url = `http://localhost:3000/mocks/services.json`;
+        const url = `/mocks/services.json`;
         const response = yield call(axios.get, url);
         yield put({
           type: types.SERVICES_SUCCESS,

@@ -4,7 +4,7 @@ import { types, I18NAction } from '../actions/i18n';
 
 export function* getLocaleData({ langCode = 'en' }: I18NAction) {
     try {
-        const url = `http://localhost:3000/i18n/lang_${langCode}.json`;
+        const url = `/i18n/lang_${langCode}.json`;
         const response = yield call(axios.get, url);
         yield put({
           type: types.LOCALE_DATA_SUCCESS,

@@ -17,7 +17,7 @@ function Sorting(props: SortingProps) {
     return (
         <div>
             <span className="mr-r8 fw-700">Sort</span>
-            <Dropdown className="mr-r8" data={sortConfig} onChangeHandler={sortFn} />
+            <Dropdown data={sortConfig} onChangeHandler={sortFn} />
         </div>
     );
 }

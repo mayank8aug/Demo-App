@@ -20,7 +20,7 @@ function ServiceCards(props: ServiceListProps) {
         }
     }, [headers, dispatch]);
     return (
-        <div className="service-cards-container">
+        <div className="service-cards-container display-flex flex-wrap-wrap">
             {
                 services.map(service => {
                     return (<ServiceCard service={service} />);

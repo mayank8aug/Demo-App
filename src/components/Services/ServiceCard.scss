@@ -1,0 +1,19 @@
+.service-card {
+    flex-basis: 300px;
+    box-shadow: 0px 0px 4px 2px #e5eef5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    .tag {
+        border: 2px solid #efefef;
+        display: inline-block;
+        padding: 2px 20px;
+        border-radius: 4px;
+    }
+    .summary {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

@@ -3,4 +3,10 @@
     &:hover {
         background: #ddd;
     }
+    .tooltip {
+        position: absolute;
+        background: #ddd;
+        padding: 18px;
+        margin-top: -16px;
+    }
 }

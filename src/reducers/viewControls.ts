@@ -3,7 +3,8 @@ import { types, ViewControlsAction } from '../actions/viewControls';
 const initialState = {
     sortConfig: null,
     sortBy: null,
-    view: 'grid'
+    view: 'grid',
+    context: 'SERVICES'
 };
 
 function viewControls(prevState = initialState, action: ViewControlsAction) {
@@ -15,10 +16,14 @@ function viewControls(prevState = initialState, action: ViewControlsAction) {
         case types.SET_SORT_CONFIG:
             return Object.assign({}, prevState, {
                 sortConfig: action.sortConfig
-            })
+            });
         case types.SET_VIEW:
             return Object.assign({}, prevState, {
                 view: action.view
+            });
+        case types.SET_CONTEXT:
+            return Object.assign({}, prevState, {
+                context: action.context
             })
         default:
             return prevState;
