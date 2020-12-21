@@ -21,7 +21,7 @@ function Dropdown(props: DropdownProps) {
                 data.map(option => {
                     const { value, label } = option;
                     return (
-                        <option value={value}>{(localeData[label] || label).replace(/\b\w/g , function(m){ return m.toUpperCase(); } )}</option>
+                        <option key={value} value={value}>{(localeData[label] || label).replace(/\b\w/g , function(m){ return m.toUpperCase(); } )}</option>
                     )
                 })
             }

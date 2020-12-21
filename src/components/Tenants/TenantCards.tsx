@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setSortConfig } from '../../actions/viewControls';
-import ServiceCard from './ServiceCard';
+import TenantCard from './TenantCard';
 
-interface ServiceCardProps {
-    services: Array<Object>;
+interface TenantCardProps {
+    tenants: Array<Object>;
 }
 
-function ServiceCards(props: ServiceCardProps) {
-    const { services } = props;
-    const [headers] = useState(Object.keys(services[0]));
+function TenantCards(props: TenantCardProps) {
+    const { tenants } = props;
+    const [headers] = useState(Object.keys(tenants[0]));
     const dispatch = useDispatch();
     useEffect(() => {
         if (headers) {
@@ -20,14 +20,14 @@ function ServiceCards(props: ServiceCardProps) {
         }
     }, [headers, dispatch]);
     return (
-        <div className="service-cards-container display-flex flex-wrap-wrap">
+        <div className="tenant-cards-container display-flex flex-wrap-wrap">
             {
-                services.map(service => {
-                    return (<ServiceCard service={service} />);
+                tenants.map(tenant => {
+                    return (<TenantCard tenant={tenant} />);
                 })
             }
         </div>
     );
 }
 
-export default ServiceCards;
+export default TenantCards;

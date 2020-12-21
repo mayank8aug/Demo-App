@@ -10,7 +10,7 @@ function NewTenant() {
     return (
         <div>
             <Button label="Add Tenant" type="primary" clickHandler={toggleTenantFormFn} />
-            {showTenantForm && <AddTenantPopup secondaryHandler={toggleTenantFormFn} />}
+            {showTenantForm && <AddTenantPopup closeHandler={toggleTenantFormFn} />}
         </div>
     );
 }

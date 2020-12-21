@@ -12,13 +12,13 @@ function NavMenu() {
                 {
                     menu.menuList.map(menuItem => {
                         return (
-                            <MenuItem expanded={expanded} menuItem={menuItem} />
+                            <MenuItem key={menuItem.url} expanded={expanded} menuItem={menuItem} />
                         )
                     })
                 }
             </div>
             {expanded &&
-                <div className="pd-16 fw-500 fs-14">
+                <div className="pd-16 fw-500 fs-14 fst-i">
                     <div>Version 1.0.1</div>
                     <div>© Cloud Platform 2020</div>
                 </div>

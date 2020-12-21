@@ -20,7 +20,7 @@ function services(prevState = initialState, action: ServiceActionTypes) {
             return Object.assign({}, prevState, {
                 loading: false,
                 allServices: action.error
-            })
+            });
         default:
             return prevState;
     }

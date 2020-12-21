@@ -3,12 +3,12 @@ import { useDispatch } from 'react-redux';
 import Grid from '../Elements/Grid/Grid';
 import { setSortConfig } from '../../actions/viewControls';
 
-interface ServiceListProps {
-    services: Array<Object>;
+interface TenantListProps {
+    tenants: Array<Object>;
 }
 
-function ServiceList(props: ServiceListProps) {
-    const { services: data } = props;
+function TenantList(props: TenantListProps) {
+    const { tenants: data } = props;
     const [headers] = useState(Object.keys(data[0]));
     const dispatch = useDispatch();
     useEffect(() => {
@@ -24,4 +24,4 @@ function ServiceList(props: ServiceListProps) {
     );
 }
 
-export default ServiceList;
+export default TenantList;
